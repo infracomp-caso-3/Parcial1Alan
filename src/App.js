@@ -15,7 +15,7 @@ function App() {
         return <CafeDetail cafeId={selectedCafeId} onBack={() => setSelectedCafeId(null)} />;
     }
 
-    return <CafeList onSelectCafe={(id) => setSelectedCafeId(id)} />;
+    return <CafeList onSelectedCafe={(id) => setSelectedCafeId(id)} />;
 }
 
 export default App;
