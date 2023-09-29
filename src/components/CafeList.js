@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 
-const CafeList = ({onSelectCafe}) => {
+const CafeList = ({onSelectedCafe}) => {
     const [cafes, setCafes] = useState([]);
 
     useEffect(() => {
@@ -30,7 +30,7 @@ const CafeList = ({onSelectCafe}) => {
                 </thead>
                 <tbody>
                     {cafes.map(cafe => (
-                        <tr key={cafe.id} onClick={() => onSelectCafe(cafe.id)}>
+                        <tr key={cafe.id} onClick={() => onSelectedCafe(cafe.id)}>
                             <td>{cafe.nombre}</td>
                             <td>{cafe.tipo}</td>
                             <td>{cafe.region}</td>
