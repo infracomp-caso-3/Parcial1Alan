@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const CafeList = () => {
+
+const CafeList = ({onSelectCafe}) => {
     const [cafes, setCafes] = useState([]);
 
     useEffect(() => {
